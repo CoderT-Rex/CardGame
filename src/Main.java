@@ -11,6 +11,7 @@ public class Main {
         Pause.pause();
 //     Test code to display deck, will move elsewhere later.
         System.out.println("Starting deck:");
+        DeckManager.shuffle(character.getDeck());
         for (Card card : character.getDeck()){
             System.out.print(ColorText.colorize(card.getName(), card.getColor())+" ");
         }
