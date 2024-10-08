@@ -7,11 +7,7 @@ public class Main {
     public static Scanner playerInput = new Scanner(System.in);
     public static Random random = new Random();
     public static void main(String[] args) {
-        var playerName = CharacterCreation.createName();
-        var playerClass = CharacterCreation.chooseClass(playerName);
-        var winCondition = CharacterCreation.characterOrigin(playerName, playerClass);
-        ArrayList<Card> deck = new ArrayList<>(StarterDeck.starterDeck(playerClass));
-        Character character = new Character(1, playerName, playerClass, winCondition, deck);
+        Character character = new Character(1, CharacterCreation.createName(), CharacterCreation.chooseClass(), CharacterCreation.characterOrigin());
         Pause.pause();
 //     Test code to display deck, will move elsewhere later.
         System.out.println("Starting deck:");

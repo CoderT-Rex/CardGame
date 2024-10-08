@@ -2,10 +2,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class CharacterCreation {
+    private static String playerName = "";
+    private static String playerClass = "";
+    private static String winCondition = "";
 
     public static String createName() {
         System.out.println("Hello Adventurer.");
-        String playerName = "";
         while (true) {
             System.out.print("What is your name? ");
             playerName = Main.playerInput.nextLine();
@@ -18,8 +20,7 @@ public class CharacterCreation {
         return playerName;
     }
 
-    public static String chooseClass(String playerName) {
-        String playerClass = "";
+    public static String chooseClass() {
         while (true) {
             System.out.println(playerName + " what is your class? 1 = Knight, 2 = Rogue, 3 = Wizard");
             playerClass = Main.playerInput.nextLine();
@@ -52,8 +53,7 @@ public class CharacterCreation {
         }
         return playerClass;
     }
-    public static String characterOrigin(String playerName,String playerClass) {
-        String winCondition = "";
+    public static String characterOrigin() {
        int originSelector = Main.random.nextInt(5);
         if (playerClass.equalsIgnoreCase("Knight") && originSelector == 0) {
             System.out.println(playerName + ", Son of Dahnthar, trusted protector of the land of Schimar. You have\n" +

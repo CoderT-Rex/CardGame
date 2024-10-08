@@ -9,12 +9,12 @@ public class Character {
 
     private int health;
 
-    public Character(int lvl, String name, String playerClass, String winCondition, ArrayList<Card> deck) {
+    public Character(int lvl, String name, String playerClass, String winCondition) {
         this.lvl = lvl;
         this.name = name;
         this.playerClass = playerClass;
         this.winCondition = winCondition;
-        this.deck = deck;
+        deck = new ArrayList<>(StarterDeck.starterDeck(this.playerClass));
         switch(playerClass){
             case("Knight"):
                 health = 90;
