@@ -6,9 +6,9 @@ public class ForestDungeon {
                 "Two paths lie before you that seem to head to your destination");
         System.out.print("Will you go right or left? ");
         String path = Main.playerInput.nextLine();
-        if (path.equalsIgnoreCase("Right")){
+        if(path.equalsIgnoreCase("Right")){
             room = 1; }
-        if(path.equalsIgnoreCase(("Left"))){
+        else if(path.equalsIgnoreCase(("Left"))){
             room = 5;
             System.out.println("This path seems shorter.");
             Pause.pause();
