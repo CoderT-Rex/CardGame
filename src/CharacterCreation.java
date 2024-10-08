@@ -37,10 +37,6 @@ public class CharacterCreation {
                 System.out.println("The Wizard, high damage spells but poor physical defense.");
                 playerClass = "Wizard";
             }
-            else if (playerClass.equalsIgnoreCase("Bard") || playerClass.equalsIgnoreCase("69")) {
-                System.out.println("Nice. You a Bard. With nothing but your lute in hand, you try to sweet talk (or sleep with)\nany enemies.");
-                playerClass = "Bard";
-            }
             else {
                 System.out.println("Invalid Selection");
                 continue;
