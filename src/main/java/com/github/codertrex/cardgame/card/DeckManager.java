@@ -1,4 +1,7 @@
+package com.github.codertrex.cardgame.card;
 import java.util.ArrayList;
+
+import com.github.codertrex.cardgame.Main;
 
 public class DeckManager {
     public static void shuffle(ArrayList<Card> deck) {

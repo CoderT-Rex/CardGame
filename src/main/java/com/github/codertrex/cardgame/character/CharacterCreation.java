@@ -1,5 +1,6 @@
-import java.util.Random;
-import java.util.Scanner;
+package com.github.codertrex.cardgame.character;
+
+import com.github.codertrex.cardgame.Main;
 
 public class CharacterCreation {
     private static String playerName = "";

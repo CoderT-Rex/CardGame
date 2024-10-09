@@ -1,4 +1,8 @@
+package com.github.codertrex.cardgame.character;
 import java.util.ArrayList;
+
+import com.github.codertrex.cardgame.card.Card;
+import com.github.codertrex.cardgame.card.StarterDeck;
 
 public class Character {
     private int lvl;

@@ -1,3 +1,8 @@
+package com.github.codertrex.cardgame.level;
+import com.github.codertrex.cardgame.Main;
+import com.github.codertrex.cardgame.character.Character;
+import com.github.codertrex.cardgame.control.Pause;
+
 public class ForestDungeon {
     private static int room;
     public static boolean play(Character character){
