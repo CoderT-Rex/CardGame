@@ -1,3 +1,4 @@
+package com.github.codertrex.cardgame.unused;
 public class Battle {
     int characterDefense = 0;
     int characterAttack =0;

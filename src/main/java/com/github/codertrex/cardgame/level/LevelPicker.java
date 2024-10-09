@@ -1,4 +1,8 @@
+package com.github.codertrex.cardgame.level;
 import java.util.Random;
+
+import com.github.codertrex.cardgame.Main;
+import com.github.codertrex.cardgame.character.Character;
 
 public class LevelPicker {
     final private static int NUMBER_OF_POSSIBLE_LEVEL_1_DUNGEONS = 1;

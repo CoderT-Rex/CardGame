@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+    id 'application'                
+}
+
+application {
+    mainClass = 'com.github.codertrex.cardgame.Main'  
+}
+
+run {
+    standardInput = System.in
+}

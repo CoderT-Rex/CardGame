@@ -1,4 +1,6 @@
-import java.util.Scanner;
+package com.github.codertrex.cardgame.control;
+
+import com.github.codertrex.cardgame.Main;
 
 public class Pause {
     public static void pause(){

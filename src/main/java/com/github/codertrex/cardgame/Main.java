@@ -1,6 +1,15 @@
-import java.util.ArrayList;
+package com.github.codertrex.cardgame;
+
 import java.util.Random;
 import java.util.Scanner;
+
+import com.github.codertrex.cardgame.card.Card;
+import com.github.codertrex.cardgame.card.DeckManager;
+import com.github.codertrex.cardgame.character.Character;
+import com.github.codertrex.cardgame.character.CharacterCreation;
+import com.github.codertrex.cardgame.control.ColorText;
+import com.github.codertrex.cardgame.control.Pause;
+import com.github.codertrex.cardgame.level.LevelPicker;
 
 public class Main {
     public static boolean gameOver = false;
@@ -13,7 +22,7 @@ public class Main {
         System.out.println("Starting deck:");
         DeckManager.shuffle(character.getDeck());
         for (Card card : character.getDeck()){
-            System.out.print(ColorText.colorize(card.getName(), card.getColor())+" ");
+            System.out.print(ColorText.colorize(card.getName(), card.getCardClass().getColor())+" ");
         }
         System.out.println();
 
